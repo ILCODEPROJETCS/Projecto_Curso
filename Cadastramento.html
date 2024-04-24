@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="img"></a>
+        <a href="index.html" class="img"></a>
         <div class="itens">
             <nav>
                 <ul>
@@ -29,21 +29,22 @@
                             <li><a href=""><s><i class="fa-solid fa-coins"></i></s>  Notícias</a></li>
                         </ul>
                     </li>
-                    <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
+                    <li><a href="Curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
                 </ul>
             </nav>
             <a href="login.html">Entrar</a> 
-            <a href="#" class="input">INSCREVA-SE</a>
+            <a href="" class="input">INSCREVA-SE</a>
             <button onclick="MostrarMenu()" id="btn1">
                 <s><i class="fa-solid fa-bars"></i></s>
             </button>
         </div>
+        
     </header>
     <!--Menu de Opções quando a tela for pequena-->
     <nav class="mobile_menu">
         <div class="itens-in">
             <a href="login.html">Entrar</a> 
-            <a href="#" class="input">INSCREVA-SE</a> 
+            <a href="" class="input">INSCREVA-SE</a> 
         </div>
         <ul>
             <li><a href="index.html"><s><i class="fa-solid fa-house"></i></s> Página Inicial</a></li>
@@ -62,7 +63,7 @@
                     <li><a href=""><s><i class="fa-solid fa-coins"></i></s>  Notícias</a></li>
                 </ul>
             </li>
-            <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
+            <li><a href="Curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
         </ul>
     </nav>
     <section id="Registro">
@@ -71,42 +72,49 @@
                 <h2>Registra-se</h2>
                 <p>Já tenho Cadastro. <a href="login.html">Fazer Login</a></p>
             </div>
-            <form action="" method="" id="cadastrar">
+            <form action="">
                 <div class="inputs">
                     <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" required>
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome" name="sobrenome" required>
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="email-confirm">Conforme E-mail</label>
-                        <input type="email" id="email-confirm" name="email-confirm" required>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required> 
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                        <label for="email_confirm">Confirme o seu E-mail:</label>
+                        <input type="email" name="email_confirm" id="email_confirm" placeholder="Confirme o seu e-mail" required>
                     </div>
                     <div>
-                        <label for="numero">Número de Telefone</label>
-                        <input type="text" id="numero" name="numero"required>
-                        <label for="job">Situação de Estudo</label>
-                        <input type="text"name="job" id="job" required>
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" required>
-                        <label for="senha-confirm">Conforme Senha</label>
-                        <input type="password" id="senha-confirm" name="senha-confirm" required>
-                    </div>
+                        <label for="numero">Número de telefone:</label>
+                        <input type="text" name="numero" id="numero" placeholder="Dígite o seu número" required>
+                        <label for="job">Situação de estudos:</label>
+                        <select name="job" id="job" required>
+                            <option value="">Tens conhecimento em gestão de empresas?</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                            <option value="Aprendendo">Tenho alguns conhecimentos da área</option>
+                        </select>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite a sua senha (8 dígitos)" required>
+                        <label for="senha_confirm">Confirmar a senha:</label>
+                        <input type="password" name="senha_confirm" id="senha_confirm" placeholder="Confirme a sua senha" required>
+                            </div>
                 </div>
                 <div class="verf">
+                    
                     <div>
                         <div class="in">
-                            <input type="checkbox">
+                            <input type="checkbox" name="checar" id="checar">
                             <div>
-                                <b>Ver política de privacidade</b>
+                                <a href=""><b>Ver política de privacidade</b></a>
                                 <p>E concordo que li e aceito a política de privacidade</p>
                             </div>
                         </div>
-                        <input type="submit" value="INSCREVER-SE" id="btnCadastro">
+                        <input type="submit" value="INSCREVER-SE">
                     </div>
                 </div>
             </form>
+    
         </section>
     </section>
 
@@ -114,7 +122,7 @@
     <footer>
         <div class="center">
             <div class="img-logotipo">
-                <a href="#" class="img"></a>
+                <a href="index.html" class="img"></a>
             </div>
             <div class="links-uteis">
                 <p>[ LINK ÚTEIS  ]</p>
@@ -136,7 +144,9 @@
             <p> &copy; ILCODE 2024 </p>
         </div>
     </footer>
+
     <script src="script.js"></script>
+    <script src="Cadastramento.js"></script>
     <script src="all.js"></script>
 </body>
 </html>

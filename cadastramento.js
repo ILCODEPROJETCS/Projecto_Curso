@@ -7,6 +7,7 @@ const senha = document.querySelector("#senha")
 const confimSenha = document.querySelector("#senha_confirm")
 const job = document.querySelector("#job")
 const numero = document.querySelector("#numero")
+const check = document.querySelector("#checar")
 
 form.addEventListener("submit", (event) =>{
     event.preventDefault();
@@ -63,6 +64,11 @@ form.addEventListener("submit", (event) =>{
     }
     if(!validar_senha(confimSenha.value, 8)){
         alert("A senha precisa no mínimo 8 dígitos.")
+        return;
+    }
+    //Verificar se leu a política de privacidade
+    if (!check.checked) {
+        alert("Verifique a política de privacidade.")
         return;
     }
     // se todos os campos estiverem correctamente preenchidos, envie o form
