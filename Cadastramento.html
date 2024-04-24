@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastramento</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="img"></a>
+        <div class="itens">
+            <nav>
+                <ul>
+                    <li><a href=""><s><i class="fa-solid fa-house"></i></s> Página Inicial</a></li>
+                    <li><a href=""><s><i class="fa-solid fa-building"></i></s> Empresa</a></li>
+                    <li><a href=""><s><i class="fa-brands fa-creative-commons-nd"></i></s>  Nossos Serviços</a></li>
+                    <li>
+                        <a href=""><s><i class="fa-solid fa-newspaper"></i></s> Publicações <s><i class="fa-solid fa-caret-down"></i></s></a>
+                        <ul>
+                            <li >
+                                <a href=""><s><i class="fa-solid fa-coins"></i></s>  Literacia Financeira <s><i class="fa-solid fa-caret-down"></i></s></a>
+                                <ul>
+                                    <li><a href="">Calculadora</a></li>
+                                    <li><a href="">Informações do nosso mercado</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><s><i class="fa-solid fa-coins"></i></s>  Notícias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
+                </ul>
+            </nav>
+            <a href="">Entrar</a> 
+            <a href="" class="input">INSCREVA-SE</a>
+            <button onclick="MostrarMenu()" id="btn1">
+                <s><i class="fa-solid fa-bars"></i></s>
+            </button>
+        </div>
+    </header>
+    <!--Menu de Opções quando a tela for pequena-->
+    <nav class="mobile_menu">
+        <div class="itens-in">
+            <a href="login.html">Entrar</a> 
+            <a href="#" class="input">INSCREVA-SE</a> 
+        </div>
+        <ul>
+            <li><a href=""><s><i class="fa-solid fa-house"></i></s> Página Inicial</a></li>
+            <li><a href=""><s><i class="fa-solid fa-building"></i></s> Empresa</a></li>
+            <li><a href=""><s><i class="fa-brands fa-creative-commons-nd"></i></s>  Nossos Serviços</a></li>
+            <li>
+                <a href=""><s><i class="fa-solid fa-newspaper"></i></s> Publicações <s><i class="fa-solid fa-caret-down"></i></s></a>
+                <ul>
+                    <li >
+                        <a href=""><s><i class="fa-solid fa-coins"></i></s>  Literacia Financeira <s><i class="fa-solid fa-caret-down"></i></s></a>
+                        <ul>
+                            <li><a href="">Calculadora</a></li>
+                            <li><a href="">Informações do nosso mercado</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><s><i class="fa-solid fa-coins"></i></s>  Notícias</a></li>
+                </ul>
+            </li>
+            <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
+        </ul>
+    </nav>
+    <section id="Registro">
+        <section class="all">
+            <div class="Registra-se">
+                <h2>Registra-se</h2>
+                <p>Já tenho Cadastro. <a href="login.html">Fazer Login</a></p>
+            </div>
+            <form action="" method="" id="cadastrar">
+                <div class="inputs">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email-confirm">Conforme E-mail</label>
+                        <input type="email" id="email-confirm" name="email-confirm" required>
+                    </div>
+                    <div>
+                        <label for="numero">Número de Telefone</label>
+                        <input type="text" id="numero" name="numero"required>
+                        <label for="job">Situação de Estudo</label>
+                        <input type="text"name="job" id="job" required>
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                        <label for="senha-confirm">Conforme Senha</label>
+                        <input type="password" id="senha-confirm" name="senha-confirm" required>
+                    </div>
+                </div>
+                <div class="verf">
+                    <div>
+                        <div class="in">
+                            <input type="checkbox">
+                            <div>
+                                <b>Ver política de privacidade</b>
+                                <p>E concordo que li e aceito a política de privacidade</p>
+                            </div>
+                        </div>
+                        <input type="submit" value="INSCREVER-SE" id="btnCadastro">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <!--rodape-->
+    <footer>
+        <div class="center">
+            <div class="img-logotipo">
+                <a href="#" class="img"></a>
+            </div>
+            <div class="links-uteis">
+                <p>[ LINK ÚTEIS  ]</p>
+                <a href="https://www.bna.ao" target="_blank"> > BNA</a>
+                <a href="https://www.bodiva.ao" target="_blank"> > BODIVA</a>
+                <a href="https://www.cmc.ao" target="_blank"> > CMC</a>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <div class="redes">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-snapchat"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        
+                </ul>
+            </div>
+            <p> &copy; ILCODE 2024 </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
