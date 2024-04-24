@@ -416,10 +416,10 @@ header  button s {
    justify-content: space-around;
    align-items: center;
 }
-#Apresentacao .img{
+#Apresentacao #imagem{
    max-width: max-content;
 }
-#Apresentacao .img img{
+#Apresentacao #imagem img{
    width: 350px;
    height: 400px;
 }
@@ -447,7 +447,23 @@ header  button s {
    max-width: max-content;
    margin-top: 15px;
 }
+@keyframes animacao {
+   from{position: relative; right: 0px;}
+   to{position: relative; right: 25px;}
+}
+#imagem
+{
+   animation: animacao 3s 1s infinite alternate;
+}
 @media(max-width:775px){
+   @keyframes animacao1 {
+      from{position: relative; top: 0px;}
+      to{position: relative; top: 20px;}
+   }
+   #imagem
+   {
+      animation: animacao1 3s 1s infinite alternate;
+   }
    #Apresentacao .main{
        display: grid;
        justify-content: center;
@@ -463,12 +479,13 @@ header  button s {
        justify-self: center;
        margin-bottom: 20px;
    }
-   #Apresentacao .img{
+   #Apresentacao #imgem{
        justify-self: center;
    }
 }
+
 @media(max-width:360px){
-   #Apresentacao .img img{
+   #Apresentacao #imagem img{
        width: 250px;
        height: 250px;
    }
@@ -481,7 +498,7 @@ header  button s {
 }
 @media(max-width:525px){
 
-   #Apresentacao .img img{
+   #Apresentacao .imagem img{
        height: 250px;
    }
 }
