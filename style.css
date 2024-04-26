@@ -959,11 +959,11 @@ form #btn:hover{
 }
 
 /*Estilização da tela dos cursos*/
+
 .BodyCurso{
    color: #FFFFFF;
    background-color: rgb(1, 23, 46);
 }
-
 .Cursos{
    width: 100%;
    color: #FFFFFF;
@@ -977,7 +977,6 @@ form #btn:hover{
    font-size: 30px;
    text-align: center;
    margin-bottom: 15px;
-
 }
 .Cursos .all{
    display: flex;
