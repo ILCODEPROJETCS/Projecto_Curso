@@ -82,6 +82,7 @@ header .itens nav ul li{
 }
 header .itens nav li a{
    color: white;
+   text-align: center;
 }
 header .itens nav ul { 
    display: flex;
@@ -1020,14 +1021,27 @@ form #btn:hover{
    margin-top: 10px;
 }
 
-@media(max-width:950px){
+@media(max-width:970px){
    .Cursos .all{
       display: grid;
    }
    .Cursos .all .curso{
       margin-right: 0;
+      width: 600px;
    }
 }
+@media(max-width:620px){
+   .Cursos .all .curso{
+      width: 400px;
+   }
+}
+
+@media(max-width:420px){
+   .Cursos .all .curso{
+      width: 300px;
+   }
+}
+
 @media(max-width:310px){
    .Cursos .all .curso{
       width: 250px;
