@@ -959,50 +959,81 @@ form #btn:hover{
 }
 
 /*Estilização da tela dos cursos*/
-
-.corpoCurso{
+.BodyCurso{
    color: #FFFFFF;
    background-color: rgb(1, 23, 46);
 }
-.pai{
-   max-width: max-content;
-   margin: auto;
-   margin-top: 70px;
-}
-.Mae{
-   display: flex;
-   max-width: max-content;
-   margin: auto;
-   margin: 30px;
-}
-.Mae h1{
-   text-align: center;
-}
-.Mae p{
-   text-align: center;
-}
 
-.Mae .filho{
+.Cursos{
+   width: 100%;
+   color: #FFFFFF;
+   background-color: rgb(1, 23, 46);
+   justify-content: center;
+   align-items: center;
    display: grid;
+   margin-top: 30px;
+}
+.Cursos .titulo{
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 15px;
+
+}
+.Cursos .all{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.Cursos .all .curso{
+   display: grid;
+   justify-content: center;
+   align-items: center;
    width: 300px;
    margin-right: 20px;
+   margin-bottom: 40px;
    border-radius: 10px;
+   padding: 0 0 30px 0 ;
    background-color: #1b5f8b;
-   cursor: pointer;
 }
-.Mae .filho img{
+.Cursos .all .curso:last-child{
+   margin-right: 0;
+}
+.Cursos .all .curso:hover{
+   box-shadow: 0px 0px 80px #20a6ff;
+   transition: .5s;
+}
+.Cursos .all .curso h2{
+   margin: 15px 0 15px 0;
+   font-size: 20px;
+   text-align: center;
+}
+.Cursos .all .curso img{
    width: 100%;
+   align-self: center;
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
 }
-.Mae .filho .desc{
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
-   height: 250px;
+.Cursos .all .curso p{
+   text-align: justify;
+   font-size: 15px;
 }
-.Mae .filho:hover{
-  box-shadow: 0px 0px 80px #20a6ff;
-  transition: .5s;
+.Cursos .all .curso  a{
+   color: #fff;
+   margin-top: 10px;
+}
+
+@media(max-width:950px){
+   .Cursos .all{
+      display: grid;
+   }
+   .Cursos .all .curso{
+      margin-right: 0;
+   }
+}
+@media(max-width:310px){
+   .Cursos .all .curso{
+      width: 250px;
+   }
 }
 
 
