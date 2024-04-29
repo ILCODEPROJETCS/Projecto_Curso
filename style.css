@@ -82,7 +82,6 @@ header .itens nav ul li{
 }
 header .itens nav li a{
    color: white;
-   text-align: center;
 }
 header .itens nav ul { 
    display: flex;
@@ -117,8 +116,8 @@ header .itens nav ul li:hover ul {
    display: block;
 }
 header .itens nav ul li a:hover { 
-   background-color: white; 
-   color: black;
+   color: blue;
+   background-color: #fff;
 }
 header .itens nav li ul li ul{
    padding: 0 20px 0 20px;
@@ -151,8 +150,8 @@ header .itens nav ul li ul li:hover ul li{
    display: block;
 }
 header .itens nav ul li a:hover { 
-   background-color: white; 
-   color: black;
+   color: blue;
+   background-color: #fff;
 }
 header button{ 
    display: none;
@@ -218,8 +217,8 @@ header  button s {
    display: none; 
 }
 .mobile_menu ul li a:hover { 
-   background-color: white; 
-   color: black;
+   color: blue;
+   background-color: #fff;
 }
 .mobile_menu ul li:hover ul li {
    display: block;
@@ -253,8 +252,8 @@ header  button s {
    display: block;
 }
 .mobile_menu ul li ul li ul li a:hover{
-   background-color: white; 
-   color: black;
+   color: blue;
+   background-color: #fff;
 }
 
 @media (max-width : 1290px){
@@ -450,7 +449,7 @@ header  button s {
 }
 @keyframes animacao {
    from{position: relative; right: 0px;}
-   to{position: relative; right: 25px;}
+   to{position: relative; right: 50px;}
 }
 #imagem
 {
@@ -484,10 +483,9 @@ header  button s {
        justify-self: center;
    }
 }
+@media(max-width:525px){
 
-@media(max-width:360px){
-   #Apresentacao #imagem img{
-       width: 250px;
+   #Apresentacao .imagem img{
        height: 250px;
    }
 }
@@ -497,12 +495,13 @@ header  button s {
        font-size: 20px;
    }
 }
-@media(max-width:525px){
-
-   #Apresentacao .imagem img{
+@media(max-width:360px){
+   #Apresentacao #imagem img{
+       width: 250px;
        height: 250px;
    }
 }
+
 
 /*Slider */
 
@@ -1006,6 +1005,9 @@ form #btn:hover{
    font-size: 20px;
    text-align: center;
 }
+.Cursos .all .curso h2 b{
+   color: #000;
+}
 .Cursos .all .curso img{
    width: 100%;
    align-self: center;
@@ -1019,6 +1021,7 @@ form #btn:hover{
 .Cursos .all .curso  a{
    color: #fff;
    margin-top: 10px;
+   margin-left: 15px;
 }
 
 @media(max-width:970px){
