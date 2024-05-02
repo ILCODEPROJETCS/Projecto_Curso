@@ -1005,8 +1005,10 @@ form #btn:hover{
    margin-right: 0;
 }
 .Cursos .all .curso:hover{
-   box-shadow: 0px 0px 80px #20a6ff;
-   transition: .5s;
+   box-shadow: 0px 0px 20px #20a6ff;
+   transition: .6s all;
+   transform: scale(1.02);
+   cursor: pointer;
 }
 .Cursos .all .curso h2{
    margin: 15px 0 15px 0;
