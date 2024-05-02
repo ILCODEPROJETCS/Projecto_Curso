@@ -902,18 +902,6 @@ form #btn:hover{
   border: none;
   color: white;
 }
-#Registro form .verf div .in input[type="checkbox"]{
-   appearance: none;
-   width: 15px;
-   height: 15px;
-   border: 2px solid rgb(64, 120, 177);
-   background-color: transparent;
-   margin-right: 8px;
- }
- 
- #Registro form .verf div .in input[type="checkbox"]:checked{
-   background-color: white; 
- }
 #Registro form .verf div .in{
   display: flex;
   margin-right: 25px;
