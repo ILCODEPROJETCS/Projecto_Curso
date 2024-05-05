@@ -1,0 +1,6 @@
+{
+    "editor.suggest.showStatusBar": true,
+    "java.silentNotification": true,
+    "notebook.showCellStatusBar": "visible",
+    "problems.showCurrentInStatus": false
+}

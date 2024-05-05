@@ -51,6 +51,7 @@ form.addEventListener("submit", (event) =>{
         return;
     }
     if(confimSenha.value === ""){
+        confimSenha.value = "olaaa" 
         alert("Por favor confirme a sua senha")
         return;
     }
