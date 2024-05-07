@@ -32,7 +32,7 @@ form.addEventListener("submit", (event) =>{
         alert("Por favor confirme o seu email")
         return;
     }
-    if(!(email.value === confirmEmail,value)){
+    if(!(email.value === confirmEmail.value)){
         alert("O email e a confirmação do email\nsão diferentes")
     }
     // verificar se o número está  vázio
@@ -51,6 +51,7 @@ form.addEventListener("submit", (event) =>{
         return;
     }
     if(confimSenha.value === ""){
+        confimSenha.value = "olaaa" 
         alert("Por favor confirme a sua senha")
         return;
     }
