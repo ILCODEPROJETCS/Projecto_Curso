@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="all.css">
-    <title>Cadastramento feito com sucesso</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Artigos</title>
 </head>
-<body class="BodyD">
+<body class="BodyArtigos">
     <header>
         <a href="index.html" class="img"></a>
         <div class="itens">
@@ -33,8 +32,8 @@
                     <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
                 </ul>
             </nav>
-            <input type="search" placeholder="ESCREVA AQUI">
-            <input type="button" value="PESQUISAR">
+            <a href="login.html">Entrar</a> 
+            <a href="Cadastramento.html" class="input">INSCREVA-SE</a>
             <button onclick="MostrarMenu()" id="btn1">
                 <s><i class="fa-solid fa-bars"></i></s>
             </button>
@@ -67,16 +66,20 @@
             <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
         </ul>
     </nav>
-
-    <!--Corpo da aba-->
-    <section id="DepoisCad">
-        <h2>Cadastro feito com sucesso</h2>
-        <p>Aqui estão alguns cursos para você começar a 
-            alavancar sua carreira e formação académica.
-        </p>
-        <a href="perfil.html">Ver Perfil</a>
-    </section>
-
+    <Section class="Artigos">
+        <div class="img">
+            <img src="img/Conheca-nossos-cursos_Escola-de-Pessoas.png" alt="">
+        </div>
+        <div>
+            <p>Seja um dos nossos estudantes e venha conhecer
+                um mundo cheio de conhecimentos, sabedoria e disciplina
+                então não perca tempo abraça já essa oportunidade de seres
+                independente, tanto financeiramente como intelectualmente
+                inscreva-se já!
+            </p>
+            <a href="">Saber mais</a>
+        </div>
+    </Section>
     <!--rodape-->
     <footer>
         <div class="center">
@@ -103,6 +106,7 @@
             <p> &copy; ILCODE 2024 </p>
         </div>
     </footer>
+
     <script src="all.js"></script>
     <script src="script.js"></script>
 </body>
