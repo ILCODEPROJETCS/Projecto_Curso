@@ -811,7 +811,6 @@ form #btn:hover{
 
 #Registro{
    background: rgb(1, 23, 46);
-   width: 100%;
    display: grid;
    justify-content: center;
    align-items: center;
@@ -841,8 +840,10 @@ form #btn:hover{
 }
 #Registro form{
    justify-content: center;
+   justify-self: center;
    display: grid;
    align-items: center;
+   width: 96%;
    padding: 30px;
    border-radius: 10px;
    border: 1px solid rgb(121, 177, 234);
@@ -858,6 +859,21 @@ form #btn:hover{
 #Registro form .inputs div:last-child{
    margin-right: 0;
 }
+#Registro form .inputs div .radios{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 10px;
+}
+#Registro form .inputs div .radios input[type="radio"]{
+   appearance: none;
+   content: "";
+   width: 15px;
+   height: 15px;
+   border: 4px solid white;
+   border-radius: 10px;
+   background-color: white;
+}
 #Registro form .inputs div input{
   background-color: rgb(42, 58, 73);
   width: 300px;
@@ -872,15 +888,9 @@ form #btn:hover{
   color: #efecec;
   opacity: 0.9px;
 }
-#Registro form .inputs div select{
-  background-color: rgb(42, 58, 73);
-  width: 300px;
-  height: 45px;
-  padding: 5px;
-  font-size: 15px;
-  border-radius: 4px;
-  color: #fff;
-  border: none;
+
+#Registro form .inputs div .radios input[type="radio"]:checked{
+   background-color: #000;
 }
 #Registro form .inputs div label{
    font-size: 18px;
@@ -945,12 +955,12 @@ form #btn:hover{
  }
 }
 @media (max-width : 450px){
-   #Registro form .inputs div input, #Registro form .inputs div select{
+   #Registro form .inputs div input{
       width: 250px;
    }
  }
 @media (max-width : 300px){
-  #Registro form .inputs div input, #Registro form .inputs div select{
+  #Registro form .inputs div input{
      width: 200px;
   }
 }
@@ -1052,6 +1062,7 @@ form #btn:hover{
 }
 
 /*Estilização da página aprender*/
+
 .BodyAprender{
    background-color: #000;
 }
@@ -1211,6 +1222,7 @@ form #btn:hover{
 }
 
 /*Pagina de Informação da instituição*/
+
 .BodyInfo{
    background-color: #000;
 }
@@ -1290,7 +1302,8 @@ form #btn:hover{
    }
 }
 
-/*Aba quem vem depois do cadastramento ser feito*/
+/*Aba que vem depois do cadastramento ser feito*/
+
 .BodyD{
    background-color: rgb(96, 96, 96);
    display: grid;
@@ -1379,7 +1392,6 @@ form #btn:hover{
    background-image: url('img/logotipo.png');
    background-size: cover;
    position: relative;
-   left: -70px;
    width: 80px;
    height: 80px;
 }
@@ -1408,17 +1420,16 @@ form #btn:hover{
 #Perfil .all .main .link{
    width: 25%;
    display: grid;
-   gap: 10px;
    align-items: center;
    justify-content: center;
 }
 #Perfil .all .main .link a{
    display: grid;
    color: #fff;
-   width: 75%;
-   height: 75px;
+   width: 96%;
+   height: 60px;
    font-size: 20px;
-   padding: 20px 30px 20px 30px;
+   padding: 10px;
    background-color: rgb(30, 30, 30);
    text-align: center;
    border-radius: 10px;
@@ -1465,13 +1476,19 @@ form #btn:hover{
    border: none;
    margin: 0 20px 10px 0;
    color: #fff;
-
+   font-size: 15px;
 }
 #Perfil .all .main .Dados .in .in2{
    display: flex;
    align-self: center;
    gap: 20px;
    margin-top: 15px;
+}
+#Perfil .all .main .Dados .in .in2 .in2-in{
+   display: none;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
 }
 #Perfil .all .main .Dados .in div{
    display: grid;
@@ -1566,80 +1583,21 @@ form #btn:hover{
    }
 }
 @media(max-width:445px){
-   /*#Perfil .all .main .Dados .in2 div:first-child p:nth-child(1){
-      grid-area: primeiro;
-   }
-   #Perfil .all .main .Dados .in2 div:first-child p:nth-child(2){
-      grid-area: segundo;
-   }
-   #Perfil .all .main .Dados .in2 div:first-child p:nth-child(3){
-      grid-area: terceiro;
-   }
-   #Perfil .all .main .Dados .in2 div:first-child p:nth-child(4){
-      grid-area: quarto;
-   }
-   #Perfil .all .main .Dados .in2 div:first-child p:nth-child(5){
-      grid-area: quinto;
-   }
-   #Perfil .all .main .Dados .in2 div:first-child p:nth-child(6){
-      grid-area: sexto;
-  }
-   #Perfil .all .main .Dados .in2 div:first-child p:nth-child(7){
-      grid-area: setimo;
-   }
-   #Perfil .all .main .Dados .in2 div:first-child p:nth-child(8){
-      grid-area: oitavo;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(1){
-      grid-area: primeiro2;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(2){
-      grid-area: segundo2;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(3){
-      grid-area: terceiro2;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(4){
-      grid-area: quarto2;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(5){
-      grid-area: quinto2;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(6){
-      grid-area: sexto2;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(7){
-      grid-area: setimo2;
-   }
-   #Perfil .all .main .Dados .in2 div:last-child p:nth-child(8){
-      grid-area: oitavo2;
-   }*/
    #Perfil .all .main .Dados .in .in2{
       display: grid;
       gap: 10px;
-      /*grid-template-areas: primeiro
-                           primeiro2
-                           segundo
-                           segundo2
-                           terceiro
-                           terceiro2
-                           quarto
-                           quarto2
-                           quinto
-                           quinto2
-                           sexto
-                           sexto2
-                           setimo
-                           setimo2
-                           oitavo
-                           oitavo2;*/
+   }
+   #Perfil .all .main .Dados .in .in2 div{
+      display: none;
+   }
+   #Perfil .all .main .Dados .in .in2 .in2-in{
+      display: grid;
    }
    #Perfil .all .main .Dados{
       width: 60%;
    }
    #Perfil .all .main .link{
       width: 40%;
-      gap: 0;
    }
    #Perfil .all .main .link a{
       height: 50px;
@@ -1660,7 +1618,8 @@ form #btn:hover{
       padding: 10px;
    }
    #Perfil .all .main .Dados .in a{
-      padding: 10px;
+      padding: 8px;
+      font-size: 12px;
    }
 }
 @media(max-width:320px){
@@ -1697,11 +1656,8 @@ form #btn:hover{
 #Painel .all .div .img{
    background-image: url('img/logotipo.png');
    background-size: cover;
-   position: relative;
-   left: -60px;
    width: 80px;
    height: 80px;
-
 }
 #Painel .all .div div{
     display: flex;
@@ -1728,17 +1684,17 @@ form #btn:hover{
 #Painel .all .main .link{
    width: 25%;
    display: grid;
-   gap: 20px;
+   gap: 50px;
    align-items: center;
    justify-content: center;
 }
 #Painel .all .main .link a{
    display: grid;
    color: #fff;
-   width: 75%;
-   height: 75px;
+   width: 96%;
+   height: 60px;
    font-size: 20px;
-   padding: 20px 30px 20px 30px;
+   padding: 10px;
    background-color: rgb(30, 30, 30);
    text-align: center;
    border-radius: 10px;
@@ -1757,45 +1713,46 @@ form #btn:hover{
    align-self: center;
 }
 #Painel .all .main .Dados{
-   display: grid;
    width: 75%;
    background-color: #000;
-   gap: 10px;
-}
-#Painel .all .main .Dados h2{
-   font-size: 50px;
-   color: #fff;
-   margin: 20px 0 0 15px;
 }
 #Painel .all .main .Dados .in{
-   display: flex;
+   display: grid;
+   align-items: center;
    gap: 10px;
    width: 95%;
-   align-items: center;
-   justify-content: center;
-   justify-self: center;
-   align-self: center;
 }
-#Painel .all .main .Dados .in div{
+#Painel .all .main .Dados .in h2{
+   font-size: 50px;
+   color: #fff;
+   margin: 20px 0 15px 0;
+}
+#Painel .all .main .Dados .in .in2{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-self: center;
+   justify-self: center;
+   margin-left: 15px;
+   gap: 10px;
+}
+#Painel .all .main .Dados .in .in2 div{
    background-color: rgb(25, 25, 25);
-   display: grid;
-   width: 33%;
-   height: 150px;
-   padding: 15px;
-   margin-top: -350px;
+   width: 30%;
+   height: 141px;
+   justify-self: center;
+   align-items: center;
    border-radius: 10px;
    text-align: center;
-   align-self: center;
-   justify-self: center;
 }
-#Painel .all .main .Dados .in div h2{
+#Painel .all .main .Dados .in .in2 div h2{
    font-size: 50px;
    text-align: center;
    color: #fff;
    align-self: center;
    justify-self: center;
 }
-#Painel .all .main .Dados .in div p{
+#Painel .all .main .Dados .in .in2 div p{
    color: #fff;
    font-size: 25px;
    text-align: center;
@@ -1806,7 +1763,7 @@ form #btn:hover{
    #Painel .all .main .link a{
       font-size: 15px;
    }
-   #Painel .all .main .Dados h2{
+   #Painel .all .main .Dados .in .in2 div h2{
       font-size: 35px;
    }
    #Painel .all .div div h2{
@@ -1816,10 +1773,8 @@ form #btn:hover{
       width: 70px;
       height: 70px;
    }
-   #Painel .all .main .Dados .in div h2{
-      font-size: 35px;
-   }
-   #Painel .all .main .Dados .in div p{
+   
+   #Painel .all .main .Dados .in .in2 div p{
       font-size: 15px;
    }
 }
@@ -1832,6 +1787,9 @@ form #btn:hover{
    #Painel .all .div{
       display: grid;
       align-items: center;
+   }
+   #Painel .all .main .link{
+      gap: 30px;
    }
    #Painel .all .div div{
       display: grid;
@@ -1856,7 +1814,7 @@ form #btn:hover{
    }
 }
 @media(max-width:610px){
-   #Painel .all .main .Dados h2{
+   #Painel .all .main .Dados .in h2{
       font-size: 25px;
    }
    #Painel .all .div div h2{
@@ -1885,19 +1843,24 @@ form #btn:hover{
    #Painel .all .div div h2{
       font-size: 25px;
    }
+   #Painel .all .main .link{
+      gap: 20px;
+   }
    #Painel .all .main .link a{
       padding: 10px;
    }
-   #Painel .all .main .Dados .in{
+   #Painel .all .main .Dados .in .in2{
       display: grid;
       justify-content: center;
+      justify-self: center;
+      margin-left: 0;
    }
-   #Painel .all .main .Dados .in div{
+   #Painel .all .main .Dados .in .in2 div{
       width: 70%;
       height: 120px;
       margin-top: 0;
    }
-   #Painel .all .main .Dados .in div:last-child{
+   #Painel .all .main .Dados .in .in2 div:last-child{
       margin-bottom: 15px;
    }
 }
@@ -1907,6 +1870,230 @@ form #btn:hover{
       justify-self: left;
    }
 }
+/*Histórico*/
+.BodyHistorico{
+   background-color: rgb(22, 22, 22);
+   display: grid;
+   align-items: center;
+}
+#Historico{
+   height: 100%;
+   background-color: rgb(22, 22, 22);
+   align-items: center;
+   align-self: center;
+   margin-top: 20px;
+}
+#Historico .all{
+   display: grid;
+   align-items: center;
+   gap: 15px;
+}
+#Historico .all .div{
+   display: flex;
+   gap: 20px;
+   justify-content: space-around;
+}
+#Historico .all .div .img{
+   background-image: url('img/logotipo.png');
+   background-size: cover;
+   width: 80px;
+   height: 80px;
+}
+#Historico .all .div div{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+#Historico .all .div div img{
+   width: 120px;
+   height: 100px;
+   border-radius: 8px;
+   border: 1px solid;
+}
+#Historico .all .div div h2{
+   color: #fff;
+   font-size: 50px;
+   text-align: center;
+}
+#Historico .all .div div b{
+   color: rgb(104, 104, 104);
+}
+#Historico .all .main{
+   display: flex;
+}
+#Historico .all .main .link{
+   width: 25%;
+   display: grid;
+   gap: 50px;
+   align-items: center;
+   justify-content: center;
+}
+#Historico .all .main .link a{
+   display: grid;
+   color: #fff;
+   width: 96%;
+   height: 60px;
+   font-size: 20px;
+   padding: 10px;
+   background-color: rgb(30, 30, 30);
+   text-align: center;
+   border-radius: 10px;
+   justify-content: center;
+   justify-self: center;
+   align-items: center;
+}
+#Historico .all .main .link a:nth-child(4){
+   background-color: rgb(89, 173, 255);
+}
+#Historico .all .main .link a:hover{
+   background-color: rgb(89, 173, 255);
+}
+#Historico .all .main .link a b{
+   text-align: center;
+   align-self: center;
+}
+#Historico .all .main .Dados{
+   width: 75%;
+   justify-content: center;
+   background-color: #000;
+}
+#Historico .all .main .Dados .in{
+   display: grid;
+   width: 100%;
+   align-items: center;
+   margin-left: 10px;
+   gap: 10px;
+   width: 95%;
+}
+#Historico .all .main .Dados .in h2{
+   font-size: 50px;
+   color: #fff;
+   margin: 20px 0 15px 0;
+}
+#Historico .all .main .Dados .in .in2{
+   width: 100%;
+   height: 91px;
+   display: flex;
+   background-color: rgb(35, 35, 35);
+   align-self: center;
+   justify-self: center;
+   align-items: center;
+   margin-left: 15px;
+   gap: 10px;
+   border-radius: 10px;
+}
+#Historico .all .main .Dados .in .in2 p{
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-left: 10px;
+}
+@media(max-width:960px){
+   #Historico .all .main .link a{
+      font-size: 15px;
+   }
+   #Historico .all .div div h2{
+      font-size: 45px;
+   }
+   #Historico .all .div .img{
+      width: 70px;
+      height: 70px;
+   }
+   
+}
+@media(max-width:715px){
+   #Historico .all .main .link a{
+      height: 60px;
+   }
+}
+@media(max-width:640px){
+   #Historico .all .div{
+      display: grid;
+      align-items: center;
+   }
+   #Historico .all .div div{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+   }
+   #Historico .all .div div img{
+      border-radius: 100%;
+      justify-self: center;
+      width: 150px;
+      height: 130px;
+   }
+   #Historico .all .div .img{
+      justify-self: start;
+      position: relative;
+      left: -80px;
+      width: 50px;
+      height: 50px;
+   }
+   #Historico .all .main .link a{
+      padding: 10px 20px 10px 20px;
+   }
+}
+@media(max-width:610px){
+   #Historico .all .main .Dados .in h2{
+      font-size: 25px;
+   }
+   #Historico .all .div div h2{
+      font-size: 35px;
+   }
+   #Historico .all .main .link a{
+      font-size: 12px;
+      width: 80%;
+   }
+   #Historico .all .main .Dados .in .in2 {
+      height: 70px;
+   }
+   #Historico .all .main .Dados .in .in2 p{
+      font-size: 25px;
+   }
+}
+@media(max-width:500px){
+   #Historico .all .div .img{
+      left: -40px;
+   }
+   #Historico .all .main .Dados .in .in2 p{
+      font-size: 15px;
+   }
+}
+@media(max-width:445px){
+   #Historico .all .main .Dados{
+      width: 60%;
+   }
+   #Historico .all .main .Dados .in{
+      margin-left: 5px;
+   }
+   #Historico .all .main .link{
+      width: 40%;
+   }
+   #Historico .all .main .link a{
+      height: 50px;
+   }
+   #Historico .all .div div h2{
+      font-size: 25px;
+   }
+   #Historico .all .main .link a{
+      padding: 10px;
+   }
+   #Historico .all .main .Dados .in .in2{
+      display: grid;
+      justify-content: center;
+      justify-self: center;
+      margin-left: 0;
+   }
+   #Historico .all .main .Dados .in .in2 p{
+      text-align: center;
+   }
+}
+@media(max-width:320px){
+   #Historico .all .div .img{
+      left: 0;
+      justify-self: left;
+   }
+}
+
 
 /*Tela Artigos*/
 

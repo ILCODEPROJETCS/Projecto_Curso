@@ -2,11 +2,9 @@ const form = document.querySelector("#cadastrar")
 const nome = document.querySelector("#nome")
 const Sobrenome = document.querySelector("#sobrenome")
 const email = document.querySelector("#email")
-const confirmEmail = document.querySelector("#email_confirm")
 const senha = document.querySelector("#senha")
 const confimSenha = document.querySelector("#senha_confirm")
-const job = document.querySelector("#job")
-const numero = document.querySelector("#numero")
+const sexo = document.querySelector("#sexo")
 const check = document.querySelector("#checar")
 
 form.addEventListener("submit", (event) =>{
@@ -28,30 +26,18 @@ form.addEventListener("submit", (event) =>{
         alert("Por favor preencha o seu email")
         return;
     }
-    if(confirmEmail.value === "" || !validar_email(email.value)){
-        alert("Por favor confirme o seu email")
+    
+    if (!sexo.checked) {
+        alert("Por favor informe o seu género");
         return;
     }
-    if(!(email.value === confirmEmail.value)){
-        alert("O email e a confirmação do email\nsão diferentes")
-    }
-    // verificar se o número está  vázio
-    if(numero.value === ""){
-        alert("Por favor preencha o seu número")
-        return;
-    }
-      //verificar a selecão 
-    if(job.value === ""){
-       alert("Por favor seleccione a sua situação.")
-       return
-    }
+    
     // verificar se o senha está  vázio
     if(senha.value === ""){
         alert("Por favor preencha o sua senha")
         return;
     }
-    if(confimSenha.value === ""){
-        confimSenha.value = "olaaa" 
+    if(confimSenha.value === ""){ 
         alert("Por favor confirme a sua senha")
         return;
     }
@@ -60,10 +46,6 @@ form.addEventListener("submit", (event) =>{
     }
     //verificar a senha
     if(!validar_senha(senha.value, 8)){
-        alert("A senha precisa no mínimo 8 dígitos.")
-        return;
-    }
-    if(!validar_senha(confimSenha.value, 8)){
         alert("A senha precisa no mínimo 8 dígitos.")
         return;
     }

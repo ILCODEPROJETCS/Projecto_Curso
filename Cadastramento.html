@@ -78,19 +78,15 @@
                         <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome">
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
-                        <label for="email_confirm">Confirme o seu E-mail:</label>
-                        <input type="email" name="email_confirm" id="email_confirm" placeholder="Confirme o seu e-mail">
                     </div>
                     <div>
-                        <label for="numero">Número de telefone:</label>
-                        <input type="text" name="numero" id="numero" placeholder="Dígite o seu número">
-                        <label for="job">Situação de estudos:</label>
-                        <select name="job" id="job">
-                            <option value="">Tens conhecimento em gestão de empresas?</option>
-                            <option value="Sim">Sim</option>
-                            <option value="Não">Não</option>
-                            <option value="Aprendendo">Tenho alguns conhecimentos da área</option>
-                        </select>
+                        <label for="sexo">Informe o seu género</label>
+                        <div class="radios">
+                            <label for="sexo">Masculino</label>
+                            <input type="radio" name="sexo" id="sexo" value="Masculino">
+                            <label for="sexo">Femenino</label>
+                            <input type="radio" name="sexo" id="sexo" value="Femenino">
+                        </div>
                         <label for="senha">Senha:</label>
                         <input type="password" name="senha" id="senha" placeholder="Digite a sua senha (8 dígitos)">
                         <label for="senha_confirm">Confirmar a senha:</label>
