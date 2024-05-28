@@ -1370,7 +1370,6 @@ form #btn:hover{
    background-color: rgb(22, 22, 22);
    display: grid;
    align-items: center;
-   border: 1px solid red;
 }
 #Perfil{
    height: 100%;
@@ -1427,7 +1426,7 @@ form #btn:hover{
 #Perfil .all .main .link a{
    display: grid;
    color: #fff;
-   width: 80%;
+   width: 65%;
    height: 50px;
    font-size: 16px;
    padding: 10px;
@@ -1512,7 +1511,11 @@ form #btn:hover{
    color: #fff;
    text-align: start;
 }
-
+@media(max-width:705px){
+   #Perfil .all .main .link a{
+      width: 80%;
+   }
+}
 @media(max-width:640px){
    #Perfil .all .div{
       display: grid;
@@ -1669,7 +1672,7 @@ form #btn:hover{
 #Painel .all .main .link a{
    display: grid;
    color: #fff;
-   width: 80%;
+   width: 65%;
    height: 50px;
    font-size: 16px;
    background-color: rgb(30, 30, 30);
@@ -1735,6 +1738,11 @@ form #btn:hover{
    text-align: center;
    align-self: center;
    justify-self: center;
+}
+@media(max-width:705px){
+   #Painel .all .main .link a{
+      width: 80%;
+   }
 }
 @media(max-width:640px){
    #Painel .all .div{
@@ -1849,7 +1857,7 @@ form #btn:hover{
 }
 #Historico .all .div div h2{
    color: #fff;
-   font-size: 50px;
+   font-size: 30px;
    text-align: center;
 }
 #Historico .all .div div b{
@@ -1861,16 +1869,16 @@ form #btn:hover{
 #Historico .all .main .link{
    width: 25%;
    display: grid;
-   gap: 50px;
+   gap: 20px;
    align-items: center;
    justify-content: center;
 }
 #Historico .all .main .link a{
    display: grid;
    color: #fff;
-   width: 96%;
-   height: 60px;
-   font-size: 20px;
+   width: 65%;
+   height: 50px;
+   font-size: 16px;
    padding: 10px;
    background-color: rgb(30, 30, 30);
    text-align: center;
@@ -1903,7 +1911,7 @@ form #btn:hover{
    width: 95%;
 }
 #Historico .all .main .Dados .in h2{
-   font-size: 50px;
+   font-size: 30px;
    color: #fff;
    margin: 20px 0 15px 0;
 }
@@ -1921,22 +1929,10 @@ form #btn:hover{
 }
 #Historico .all .main .Dados .in .in2 p{
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 16px;
   margin-left: 10px;
 }
-@media(max-width:960px){
-   #Historico .all .main .link a{
-      font-size: 15px;
-   }
-   #Historico .all .div div h2{
-      font-size: 45px;
-   }
-   #Historico .all .div .img{
-      width: 70px;
-      height: 70px;
-   }
-   
-}
+
 @media(max-width:715px){
    #Historico .all .main .link a{
       height: 60px;
@@ -1970,21 +1966,12 @@ form #btn:hover{
    }
 }
 @media(max-width:610px){
-   #Historico .all .main .Dados .in h2{
-      font-size: 25px;
-   }
-   #Historico .all .div div h2{
-      font-size: 35px;
-   }
    #Historico .all .main .link a{
       font-size: 12px;
       width: 80%;
    }
    #Historico .all .main .Dados .in .in2 {
       height: 70px;
-   }
-   #Historico .all .main .Dados .in .in2 p{
-      font-size: 25px;
    }
 }
 @media(max-width:500px){
@@ -2007,12 +1994,6 @@ form #btn:hover{
    }
    #Historico .all .main .link a{
       height: 50px;
-   }
-   #Historico .all .div div h2{
-      font-size: 25px;
-   }
-   #Historico .all .main .link a{
-      padding: 10px;
    }
    #Historico .all .main .Dados .in .in2{
       display: grid;
