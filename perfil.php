@@ -20,10 +20,10 @@
             </div>
             <div class="main">
                 <div class="link">
-                    <a href="painel.html"><b>Painel</b></a>
-                    <a href="perfil.html"><b>Meu Perfil</b></a>
+                    <a href="painel.php"><b>Painel</b></a>
+                    <a href="perfil.php"><b>Meu Perfil</b></a>
                     <a href=""><b>Cursos Matriculados</b></a>
-                    <a href="historico.html"><b>Histórico</b></a>
+                    <a href="historico.php"><b>Histórico</b></a>
                     <a href=""><b>Perguntas Feitas</b></a>
                 </div>
                 <div class="Dados">

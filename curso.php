@@ -10,11 +10,11 @@
 </head>
 <body class="BodyCurso">
     <header>
-        <a href="index.html" class="img"></a>
+        <a href="index.php" class="img"></a>
         <div class="itens">
             <nav>
                 <ul>
-                    <li><a href="index.html"><s><i class="fa-solid fa-house"></i></s> Página Inicial</a></li>
+                    <li><a href="index.php"><s><i class="fa-solid fa-house"></i></s> Página Inicial</a></li>
                     <li><a href=""><s><i class="fa-solid fa-building"></i></s> Empresa</a></li>
                     <li><a href=""><s><i class="fa-brands fa-creative-commons-nd"></i></s>  Nossos Serviços</a></li>
                     <li>
@@ -30,11 +30,11 @@
                             <li><a href=""><s><i class="fa-solid fa-coins"></i></s>  Notícias</a></li>
                         </ul>
                     </li>
-                    <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
+                    <li><a href="curso.php"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
                 </ul>
             </nav>
-            <a href="login.html">Entrar</a> 
-            <a href="Cadastramento.html" class="input">INSCREVA-SE</a>
+            <a href="login.php">Entrar</a> 
+            <a href="Cadastramento.php" class="input">INSCREVA-SE</a>
             <button onclick="MostrarMenu()" id="btn1">
                 <s><i class="fa-solid fa-bars"></i></s>
             </button>
@@ -44,11 +44,11 @@
     <!--Menu de Opções quando a tela for pequena-->
     <nav class="mobile_menu">
         <div class="itens-in">
-            <a href="login.html">Entrar</a> 
-            <a href="Cadastramento.html" class="input">INSCREVA-SE</a>
+            <a href="login.php">Entrar</a> 
+            <a href="Cadastramento.php" class="input">INSCREVA-SE</a>
         </div>
         <ul>
-            <li><a href="index.html"><s><i class="fa-solid fa-house"></i></s> Página Inicial</a></li>
+            <li><a href="index.php"><s><i class="fa-solid fa-house"></i></s> Página Inicial</a></li>
             <li><a href=""><s><i class="fa-solid fa-building"></i></s> Empresa</a></li>
             <li><a href=""><s><i class="fa-brands fa-creative-commons-nd"></i></s>  Nossos Serviços</a></li>
             <li>
@@ -64,7 +64,7 @@
                     <li><a href=""><s><i class="fa-solid fa-coins"></i></s>  Notícias</a></li>
                 </ul>
             </li>
-            <li><a href="curso.html"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
+            <li><a href="curso.php"><s><i class="fa-solid fa-video"></i></s> Cursos</a></li>
         </ul>
     </nav>
 
@@ -135,7 +135,7 @@
      <footer>
         <div class="center">
             <div class="img-logotipo">
-                <a href="index.html" class="img"></a>
+                <a href="index.php" class="img"></a>
             </div>
             <div class="links-uteis">
                 <p>[ LINK ÚTEIS  ]</p>
