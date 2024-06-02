@@ -1771,7 +1771,6 @@ form #btn:hover{
 @media(max-width:610px){
    #Painel .all .main .link a{
       font-size: 12px;
-      width: 80%;
    }
 }
 
@@ -1841,8 +1840,8 @@ form #btn:hover{
 #Historico .all .div .img{
    background-image: url('img/logotipo.png');
    background-size: cover;
-   width: 80px;
-   height: 80px;
+   width: 50px;
+   height: 50px;
 }
 #Historico .all .div div{
     display: flex;
@@ -1871,7 +1870,6 @@ form #btn:hover{
    display: grid;
    gap: 20px;
    align-items: center;
-   justify-content: center;
 }
 #Historico .all .main .link a{
    display: grid;
@@ -1879,13 +1877,11 @@ form #btn:hover{
    width: 65%;
    height: 50px;
    font-size: 16px;
-   padding: 10px;
    background-color: rgb(30, 30, 30);
    text-align: center;
    border-radius: 10px;
-   justify-content: center;
-   justify-self: center;
    align-items: center;
+   justify-self: center;
 }
 #Historico .all .main .link a:nth-child(4){
    background-color: rgb(89, 173, 255);
@@ -1933,9 +1929,9 @@ form #btn:hover{
   margin-left: 10px;
 }
 
-@media(max-width:715px){
+@media(max-width:705px){
    #Historico .all .main .link a{
-      height: 60px;
+      width: 80%;
    }
 }
 @media(max-width:640px){
@@ -1958,11 +1954,6 @@ form #btn:hover{
       justify-self: start;
       position: relative;
       left: -80px;
-      width: 50px;
-      height: 50px;
-   }
-   #Historico .all .main .link a{
-      padding: 10px 20px 10px 20px;
    }
 }
 @media(max-width:610px){
@@ -1991,9 +1982,6 @@ form #btn:hover{
    }
    #Historico .all .main .link{
       width: 40%;
-   }
-   #Historico .all .main .link a{
-      height: 50px;
    }
    #Historico .all .main .Dados .in .in2{
       display: grid;

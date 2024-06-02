@@ -16,7 +16,7 @@
     <form action="perfil.html" method="" id="login">
         <h1>Fazer Login</h1> <br>
         <div class="cimaCriar">
-            Não tem uma conta?<a href="Cadastramento.html">Criar conta</a>
+            Não tem uma conta?<a href="Cadastramento.php">Criar conta</a>
         </div> <br>
         <div class="inputCaixa">
             <input type="email" id="email" name="email">
