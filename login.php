@@ -13,7 +13,7 @@
     <div class="loginImg">
         <img src="img/logotipo.png" alt="logotipo">
     </div>
-    <form action="perfil.html" method="" id="login">
+    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="login">
         <h1>Fazer Login</h1> <br>
         <div class="cimaCriar">
             Não tem uma conta?<a href="Cadastramento.php">Criar conta</a>
@@ -34,5 +34,10 @@
     <script src="all.js"></script>
     <script src="script.js"></script>
     <script src="login.js"></script>
+
+    <?php
+        include_once("Banco_dados/config.php");
+        header("Location: perfil.php");
+    ?>
 </body>
 </html>
