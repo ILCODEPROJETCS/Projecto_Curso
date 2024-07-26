@@ -37,7 +37,6 @@
 
     <?php
         include_once("Banco_dados/config.php");
-        header("Location: perfil.php");
     ?>
 </body>
 </html>

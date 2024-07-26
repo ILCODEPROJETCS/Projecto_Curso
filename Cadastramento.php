@@ -67,7 +67,7 @@
                 <h2>Registra-se</h2>
                 <p>Já tenho Cadastro. <a href="login.php">Fazer Login</a></p>
             </div>
-            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="cadastrar" >
+            <form action="Banco_dados/cadastrar_config.php" method="post" id="cadastrar" >
                 <div class="inputs">
                     <div>
                         <label for="nome">Nome:</label>
@@ -139,10 +139,5 @@
     <script src="script.js"></script>
     <script src="Cadastramento.js"></script>
     <script src="all.js"></script>
-
-    <?php
-       include_once("Banco_dados/config.php");
-        header("Location: depoisCadastramento.php")
-    ?>
 </body>
 </html>
