@@ -26,7 +26,7 @@
                     </p>
                 </div>
             </div>
-            <a href="">Quero ser aluno</a>
+            <a href="Cadastramento.php">Quero ser aluno</a>
         </div>
       
     </section>

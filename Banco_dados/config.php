@@ -2,12 +2,14 @@
     $hostname = "localhost";
     $user = "root";
     $password = "";
-    $base = "Curso";
+    $base = "curso";
 
-    $conectar = new mysqli($hostname, $user,$password, $base);
-    if($conectar->connect_errno){
-        echo "<script>
-            alert('Falha ao conectar com o banco de dados'".$conectar->connect_errno."' ". $conectar->connect_error.")
-        </script>";
+    try{
+        $conectar = new PDO("mysql:dbname=".$base."; host=".$hostname, $user, $password);
+        $conectar->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
+    catch(PDOException $ex){
+        echo 'Erro -> '.$ex->getMessage();
+    }
+   
 ?>

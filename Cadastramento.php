@@ -67,7 +67,7 @@
                 <h2>Registra-se</h2>
                 <p>Já tenho Cadastro. <a href="login.php">Fazer Login</a></p>
             </div>
-            <form action="Banco_dados/cadastrar_config.php" method="post" id="cadastrar" >
+            <form action="./Banco_dados/cadastrar_config.php" method="post" id="cadastrar" >
                 <div class="inputs">
                     <div>
                         <label for="nome">Nome:</label>
@@ -97,7 +97,7 @@
                         <div class="in">
                             <input type="checkbox" name="checar" id="checar">
                             <div>
-                                <a href=""><b>Ver política de privacidade</b></a>
+                                <a href="politica.php" target="_blank"><b>Ver política de privacidade</b></a>
                                 <p>E concordo que li e aceito a política de privacidade</p>
                             </div>
                         </div>
@@ -139,5 +139,6 @@
     <script src="script.js"></script>
     <script src="Cadastramento.js"></script>
     <script src="all.js"></script>
+    
 </body>
 </html>
