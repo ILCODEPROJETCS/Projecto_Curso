@@ -17,7 +17,9 @@
             $sexo = "F";
         }
         $consultar = "SELECT * FROM cadastramento";
-        $verif = $conectar->query($consultar)->fetchAll();
+        $executar = $conectar->query($consultar);
+        $verif = $executar->fetchAll(PDO::FETCH_ASSOC);
+        $executar->execute();   
         foreach($v as $verif){
             if(!($v["email"] == $email)){
                 $exist = 1;
@@ -33,11 +35,11 @@
         }
         else{
             echo "<script> alert('Email já cadastrado')</script>";
-            header("Location: ../Cadastramento.php");
+            header("Location: ./Cadastramento.php");
         } 
     }
-    else{
-        header("Location: ../Cadastramento.php");
-    }
+    /*else{
+        header("Location: ./Cadastramento.php");
+    }*/
     
 ?>

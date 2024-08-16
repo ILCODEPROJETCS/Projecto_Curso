@@ -67,7 +67,7 @@
                 <h2>Registra-se</h2>
                 <p>Já tenho Cadastro. <a href="login.php">Fazer Login</a></p>
             </div>
-            <form action="Banco_dados/cadastrar_config.php" method="post" id="cadastrar" >
+            <form action="cadastrar_config.php" method="post" id="cadastrar" >
                 <div class="inputs">
                     <div>
                         <label for="nome">Nome:</label>
