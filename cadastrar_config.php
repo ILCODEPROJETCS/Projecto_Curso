@@ -38,8 +38,8 @@
             header("Location: ./Cadastramento.php");
         } 
     }
-    /*else{
+    else{
         header("Location: ./Cadastramento.php");
-    }*/
+    }
     
 ?>
