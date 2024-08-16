@@ -13,7 +13,7 @@
     <div class="loginImg">
         <img src="img/logotipo.png" alt="logotipo">
     </div>
-    <form action="login_config.php" method="post" id="login">
+    <form action="Banco_dados/login_config.php" method="post" id="login">
         <h1>Fazer Login</h1> <br>
         <div class="cimaCriar">
             Não tem uma conta?<a href="Cadastramento.php">Criar conta</a>

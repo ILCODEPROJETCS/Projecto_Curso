@@ -3,7 +3,7 @@
     if  (isset($_POST["nome"]) && isset($_POST["sobrenome"]) && isset($_POST["email"])
         && isset($_POST["sexo"]) && isset($_POST["senha"])){
 
-        $exist = 0;
+        $noExist = 0;
         $nome = $_POST["nome"];
         $sobrenome = $_POST["sobrenome"];
         $email = $_POST["email"];
@@ -19,27 +19,27 @@
         $consultar = "SELECT * FROM cadastramento";
         $executar = $conectar->query($consultar);
         $verif = $executar->fetchAll(PDO::FETCH_ASSOC);
-        $executar->execute();   
-        foreach($v as $verif){
-            if(!($v["email"] == $email)){
-                $exist = 1;
+        
+        foreach($verif as $v){
+            if(!($v["Email"] == $email)){
+                $noExist = 1;
             }
             else{
-                $exist = 0;
+                $noExist = 0;
+                return;
             }
         }
-        if($exist == 1){
+        if($noExist == 1){
             $inserir = "INSERT INTO cadastramento VALUES (default, '$nome', '$sobrenome', '$email', '$sexo', '$senha')";
             $result = $conectar->query($inserir);
-            header("Location: ./depoisCadastramento.php");
+            header("Location: ../depoisCadastramento.php");
         }
         else{
             echo "<script> alert('Email já cadastrado')</script>";
-            header("Location: ./Cadastramento.php");
-        } 
+            header("Location: ../Cadastramento.php");
+        }
     }
     else{
-        header("Location: ./Cadastramento.php");
+        header("Location: ../Cadastramento.php");
     }
-    
 ?>

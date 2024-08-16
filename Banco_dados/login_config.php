@@ -9,19 +9,16 @@
         $consultar = "SELECT * FROM cadastramento";
         $executar = $conectar->query($consultar);
         $result = $executar->fetchAll(PDO::FETCH_ASSOC);
-        $executar->execute();
 
-        foreach($res as $result){
-            if($res["email"] == $email && $res["senha"] == $senha){
+        foreach($result as $res){
+            if($res["Email"] == $email && $res["Senha"] == $senha){
                 $v = 1;
+                header("Location: ../perfil.php");
                 return;
             }
         }
-        if($v == 1){
-            header("Location: ./perfil.php");
-        }
-        else{
-            header("Location: ./login.php");
-        }
+    }
+    else{
+        header("Location: ../login.php");
     }
 ?>
