@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Estilos/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="all.css">
     <title>Cadastramento feito com sucesso</title>
@@ -74,7 +74,7 @@
         <p>Aqui estão alguns cursos para você começar a 
             alavancar sua carreira e formação académica.
         </p>
-        <a href="perfil.php">Ver Perfil</a>
+        <a href="login.php">Fazer o Login</a>
     </section>
 
     <!--rodape-->

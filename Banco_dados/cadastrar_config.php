@@ -8,7 +8,7 @@
         $sobrenome = $_POST["sobrenome"];
         $email = $_POST["email"];
         $sexo = $_POST["sexo"];
-        $senha = $_POST["senha"];
+        $senha = md5($_POST["senha"]);
 
         if($sexo == "Masculino"){
             $sexo = "M";
