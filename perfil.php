@@ -1,3 +1,7 @@
+<?php
+    include("Banco_dados/verificar.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +19,10 @@
                 <a href="" class="img" ></a>
                 <div>
                     <img src="img/RH.jpg" alt="Foto de Perfil">
-                    <h2><b>Olá</b>, Maurício Finda</h2>
+                    <h2><b>Olá</b>,
+                    <?php 
+                        echo $nome; 
+                    ?></h2>
                 </div>
             </div>
             <div class="main">

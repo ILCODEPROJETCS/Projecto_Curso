@@ -1,10 +1,25 @@
 <?php
-    include("config.php");
     if(isset($_POST["email"]) && isset($_POST["senha"])){
+       if(logado() == true){
+        if(isset($_SESSION['logado'])){
+            header("Location: ../perfil.php");
+        }
+        else{
+            header("Location: ../login.php");
+        }
+       }
+       else{
+        header("Location: ../login.php");
+       }
+    }
+    else{
+        header("Location: ../login.php");
+    }
 
-        $v = 0;
-        $email = $_POST["email"];
-        $senha = $_POST["senha"];
+    function logado(){
+        include("config.php");
+        $email = addslashes($_POST["email"]);
+        $senha = addslashes($_POST["senha"]);
 
         $consultar = "SELECT * FROM cadastramento";
         $executar = $conectar->query($consultar);
@@ -12,13 +27,12 @@
 
         foreach($result as $res){
             if($res["Email"] == $email && $res["Senha"] == $senha){
-                $v = 1;
-                header("Location: ../perfil.php");
-                return;
+                $_SESSION['logado'] = $res['Codigo'];
+                return true;
+            }
+            else{
+                return false;
             }
         }
-    }
-    else{
-        header("Location: ../login.php");
     }
 ?>
